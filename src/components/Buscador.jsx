@@ -12,7 +12,7 @@ const Buscador = () => {
         setPrice(event.target.value);
     }
     return (
-        <div className="bg-white bg-opacity-75 border-blue1 p-6 rounded-lg shadow-lg lg:flex item-center justify-between w-full">
+        <div className="bg-white bg-opacity-80 border-blue1 p-6 rounded-lg shadow-lg lg:flex item-center justify-between w-full">
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
                 <BiCategory className='text-gray-400 text-3xl mr-2' />
                 <div className="flex flex-col w-full">

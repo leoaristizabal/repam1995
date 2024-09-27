@@ -44,7 +44,7 @@ const HomeCarrusel = () => {
   };
 
   return (
-    <section className='bg-[#f3f8f6] bg-[url(/paletabg.svg)]'>
+    <section className='bg-blue1 bg-opacity-80 bg-[url(/paletabg.jpg)] bg-cover bg-center'>
       <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-12'>
         <Carousel 
           responsive={responsives} 

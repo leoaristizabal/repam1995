@@ -14,7 +14,7 @@ const Home = () => {
           </span>
         {/*}  <p className='text-black text-center text-2xl my-8'>Mira nuestros productos mas vendidos!</p>*/}
           <Buscador/>
-          <div className="text-white font-bold lg:text-1xl pt-8">Estamos contigo en:</div>
+          <div className="text-gray-600 text-center font-bold lg:text-lg pt-8">Estamos contigo en tus mejores momentos:</div>
           <img src="/heartharrow.png" className='lg:block w-32 hidden lg:my-2 -ml-9' alt="" />
         </div>
       <HomeCarrusel/>
