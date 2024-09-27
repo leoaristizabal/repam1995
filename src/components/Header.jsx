@@ -11,7 +11,7 @@ const Header = () => {
         setDropdown(!dropdown);
     };
     return (
-        <nav className='bg-white bg-opacity-10 w-full h-24 flex flex-col justify-center items-center fixed top-0 left-0 z-50'>
+        <nav className='bg-white bg-opacity-10 w-full h-24  flex flex-col justify-center items-center  fixed top-0 left-0 z-50'>
 
             <div className='container m-auto lg:px-3 w-full'>
                 <div className='lg:w-full w-11/12 mx-auto h-full flex lg:justify-center items-center lg:gap-16 justify-between'>
@@ -37,7 +37,7 @@ const Header = () => {
                     </div>
                     {dropdown ? (
                         
-                        <div className='lg:hidden text-xl cursor-pointer text-white' onClick={showDropdown}>
+                        <div className='lg:hidden text-lg cursor-pointer text-white' onClick={showDropdown}>
                             <MdClose />
                         </div>
                     ) : (
