@@ -19,7 +19,7 @@ const responsives = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 4,
+    items: 3,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -44,7 +44,7 @@ const HomeCarrusel = () => {
   };
 
   return (
-    <section className='bg-blue1 bg-opacity-80 bg-[url(/paletabg.jpg)] bg-cover bg-center'>
+    <section className=' bg-[url(/paletabg.jpg)] bg-cover bg-center'>
       <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-12'>
         <Carousel 
           responsive={responsives} 
@@ -57,8 +57,8 @@ const HomeCarrusel = () => {
             <div key={index} className="group">
               <div className={`cursor-pointer p-8 rounded-lg flex flex-col justify-center items-start gap-4 ${
                 currentSlide % TiposAventuras.length === index 
-                  ? 'bg-blue1 bg-opacity-40 text-white' 
-                  : 'bg-white text-blue1 group-hover:bg-blue1 group-hover:bg-opacity-40 group-hover:text-white'
+                  ? 'bg-blue1 bg-opacity-80 text-white' 
+                  : 'bg-white text-blue1 group-hover:bg-blue1 group-hover:bg-opacity-80 group-hover:text-white'
               }`}>
                 <p className={`font-bold text-lg ${
                   currentSlide % TiposAventuras.length === index
