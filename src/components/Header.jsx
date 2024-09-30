@@ -11,7 +11,7 @@ const Header = () => {
         setDropdown(!dropdown);
     };
     return (
-        <nav className='bg-white bg-opacity-10 w-full h-24  flex flex-col justify-center items-center  fixed top-0 left-0 z-50'>
+        <nav className='bg-blue1 bg-opacity-85 w-full h-24  flex flex-col justify-center items-center  fixed top-0 left-0 z-50'>
 
             <div className='container m-auto lg:px-3 w-full'>
                 <div className='lg:w-full w-11/12 mx-auto h-full flex lg:justify-center items-center lg:gap-16 justify-between'>
@@ -47,7 +47,7 @@ const Header = () => {
                     )}
                 </div>
                 {dropdown && (
-                    <div className='lg:hidden w-full fixed top-24 bg-blue1 bg-opacity-10 transition-all'>
+                    <div className='lg:hidden w-full fixed top-24 bg-blue1 bg-opacity-85 transition-all'>
                         <div className="w-full flex flex-col items-baseline gap-4">
                             <ul className='w-full flex flex-col justify-center'>
                                 <a href="#home" className='hover:text-[16px] text-white px-6 h-10 flex items-center leading-normal no-underline font-bold text-lg text-[12px] border-0  lue1 border-solid'>Inicio</a>

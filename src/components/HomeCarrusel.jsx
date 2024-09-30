@@ -7,6 +7,7 @@ import { RiPlanetLine } from 'react-icons/ri';
 import { TbBeach } from 'react-icons/tb';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Actividades from './Actividades';
 
 const responsives = {
   superLargeDesktop: {
@@ -44,7 +45,7 @@ const HomeCarrusel = () => {
   };
 
   return (
-    <section className=' bg-[url(/paletabg.jpg)] bg-cover bg-center'>
+    <section className=' bg-[url(/patronbg1.svg)] bg-cover bg-white bg-center'>
       <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-12'>
         <Carousel 
           responsive={responsives} 
@@ -54,7 +55,7 @@ const HomeCarrusel = () => {
           afterChange={handleAfterChange}  // Usa afterChange para actualizar el slide actual
         >
           {TiposAventuras.map((item, index) => (
-            <div key={index} className="group">
+            <div key={index} className="group border rounded-lg">
               <div className={`cursor-pointer p-8 rounded-lg flex flex-col justify-center items-start gap-4 ${
                 currentSlide % TiposAventuras.length === index 
                   ? 'bg-blue1 bg-opacity-80 text-white' 
@@ -87,6 +88,8 @@ const HomeCarrusel = () => {
             </div>
           ))}
         </Carousel>
+       
+        <Actividades/>
       </div>
     </section>
   );

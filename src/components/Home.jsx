@@ -1,6 +1,7 @@
 import React from 'react';
 import Buscador from './Buscador';
 import HomeCarrusel from './HomeCarrusel';
+import Actividades from './Actividades';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
           <img src="/heartharrow.png" className='lg:block w-32 hidden lg:my-2 -ml-9' alt="" />
         </div>
       <HomeCarrusel/>
+      <Actividades/>
       </section>
     </div>
   );

@@ -7,6 +7,8 @@ export default {
         hover: "#b2cce3",
         blue1: "#61CAC6",
         blue2: "#B2CCE3",
+        red1:"#ff103d",
+        orange1: "#f2b705",
       },
       boxShadow: {
         'xl': '0px 10px 60px 0px rgba(0,0,0,0.15)',
