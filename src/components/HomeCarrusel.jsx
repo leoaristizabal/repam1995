@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import { FaBiking } from 'react-icons/fa';
+import { FaBiking, FaFirstOrder, FaSnowflake } from 'react-icons/fa';
 import { FaSun } from 'react-icons/fa';
-import { GiTennisRacket } from 'react-icons/gi';
+import { GiBrainFreeze, GiColdHeart, GiTennisRacket } from 'react-icons/gi';
 import { LiaWarehouseSolid } from 'react-icons/lia';
-import { RiPlanetLine } from 'react-icons/ri';
-import { TbBeach } from 'react-icons/tb';
+import { RiNumber1, RiPlanetLine } from 'react-icons/ri';
+import { TbBeach, TbFreezeRow, TbNumber1 } from 'react-icons/tb';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Actividades from './Actividades';
+import { BiEdit, BiFirstAid, BiFirstPage, BiMedal } from 'react-icons/bi';
+import { ImFirst } from 'react-icons/im';
+import { CgViewComfortable } from 'react-icons/cg';
+import { SiNicehash, SiTrustedshops, SiTrustpilot } from 'react-icons/si';
+import { DiModernizr } from 'react-icons/di';
 
 const responsives = {
   superLargeDesktop: {
@@ -29,12 +34,11 @@ const responsives = {
 };
 
 const TiposAventuras = [
-  { title: "Playa", icon: <TbBeach /> },
-  { title: "Deportes", icon: <GiTennisRacket /> },
-  { title: "Aventuras", icon: <LiaWarehouseSolid /> },
-  { title: "Road", icon: <FaBiking /> },
-  { title: "Sol", icon: <FaSun /> },
-  { title: "Descubrir", icon: <RiPlanetLine /> },
+  { title: "Materiales de Primera", icon: <BiMedal/> },
+  { title: "+6h Frío, +4h Calor", icon: <FaSnowflake /> },
+  { title: "Comfort + Durabilidad", icon: <SiTrustpilot/> },
+  { title: "Diseños Modernos", icon: <DiModernizr/> },
+  { title: "Termos Personalizables", icon: <BiEdit /> },
 ];
 
 const HomeCarrusel = () => {
@@ -45,8 +49,8 @@ const HomeCarrusel = () => {
   };
 
   return (
-    <section className=' bg-[url(/patronbg1.svg)] bg-cover bg-white bg-center'>
-      <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-12'>
+    <section className=' bg-[url(/patronbg1.svg)] bg-cover bg-orange1 bg-opacity-10 bg-center'>
+      <div className='relative z-10 max-w-[1400px] px-6 mx-auto xl:-mt-28 -mt-16'>
         <Carousel 
           responsive={responsives} 
           infinite 
@@ -88,7 +92,7 @@ const HomeCarrusel = () => {
             </div>
           ))}
         </Carousel>
-       
+
         <Actividades/>
       </div>
     </section>

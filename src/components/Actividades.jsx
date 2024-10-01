@@ -24,11 +24,11 @@ const responsive = {
 };
 const ImagesCarrusel = ({ image, lugar }) => {
     return (
-        <div className=' relative group overflow-hidden rounded-[10px] shadow-lg' >
+        <div className=' relative group overflow-hidden rounded-[10px] shadow-lg cursor-pointer' >
             <img src={image} alt={lugar} className='w-full h-[350px] object-cover rounded-[10px] transition-transform duration-700 ease-in-out group-hover:scale-125' />
-            <span className='absolute bg-orange1 text-white rounded-lg px-5 text-xs top-5 right-5 uppercase font-bold leading-8 whitespace-pre'>Playa</span>
+            <span className='absolute bg-orange1 bg-opacity-60 text-white rounded-lg px-5 text-xs top-5 right-5 group-hover:bg-opacity-90 font-bold leading-8 whitespace-pre transition-opacity duration-300'>@AwuasVe</span>
             <div className='absolute bg-black bottom-0 w-full bg-opacity-50 py-5 flex flex-col items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:bg-opacity-80'>
-                <p className='text-blue1 text-xl text-center font-bold flex flex-col'>Te Acompañamos
+                <p className='text-orange1 text-xl text-center font-bold flex flex-col'>Te Acompañamos
                     <span className='text-white text-center text-2xl group-hover:text-gray-800'>{lugar}</span>
                 </p>
                 <div className='absolute -top-5 right-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
@@ -48,12 +48,12 @@ const Actividades = () => {
     }
 
     return (
-        <div className='max-w-[1320px] mx-autopt-24'>
+        <div className=' max-w-[1320px] mx-auto pt-22'>
             <div className='py-16'>
                 <div className='flex flex-col items-center'>
                     <div className='relative w-fit px-8 py-2 flex items-center justify-center'>
-                        <span className='bg-blue1 rounded-md opacity-50 absolute w-full h-full z-10'></span>
-                            <h6 className='text-black relative font-semibold '>Tu compañia en</h6>
+                        <span className='bg-orange1 rounded-md bg-opacity-70 absolute w-full h-full '></span>
+                        <h6 className='text-white relative font-semibold '>Tu mejor compañia en</h6>
                     </div>
                     <h3 className='lg:text-5xl text-3xl font-bold pb-8 text-center py-4 '>Tus Mejores Momentos</h3>
                 </div>
@@ -63,12 +63,12 @@ const Actividades = () => {
                         infinite
                         autoPlay={true}
                         itemClass="px-2" >
-                        <ImagesCarrusel lugar="A la Playa" image="/image1.jpeg"/>
-                        <ImagesCarrusel lugar="En Tus Partidas de Padel" image="/image2.jpeg"/>
-                        <ImagesCarrusel lugar="A la Ofi" image="/image3.jpeg"/>
-                        <ImagesCarrusel lugar="En Tus Días de Relax" image="/image4.jpeg"/>
-                        <ImagesCarrusel lugar="En Los Chismecitos" image="/image5.jpeg"/>
-                        <ImagesCarrusel lugar="A Tomar el Sol" image="/image6.jpeg"/>
+                        <ImagesCarrusel lugar="A la Playa" image="/image1.jpeg" />
+                        <ImagesCarrusel lugar="En Tus Partidas de Padel" image="/image2.jpeg" />
+                        <ImagesCarrusel lugar="A la Ofi" image="/image3.jpeg" />
+                        <ImagesCarrusel lugar="En Tus Días de Relax" image="/image4.jpeg" />
+                        <ImagesCarrusel lugar="En Los Chismecitos" image="/image5.jpeg" />
+                        <ImagesCarrusel lugar="A Tomar el Sol" image="/image6.jpeg" />
                     </Carousel>
 
                 </div>

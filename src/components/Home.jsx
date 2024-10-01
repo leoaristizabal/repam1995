@@ -2,6 +2,7 @@ import React from 'react';
 import Buscador from './Buscador';
 import HomeCarrusel from './HomeCarrusel';
 import Actividades from './Actividades';
+import Nosotros from './Nosotros';
 
 const Home = () => {
   return (
@@ -15,11 +16,11 @@ const Home = () => {
           </span>
         {/*}  <p className='text-black text-center text-2xl my-8'>Mira nuestros productos mas vendidos!</p>*/}
           <Buscador/>
-          <div className="text-gray-600 text-center font-bold lg:text-lg pt-8">Estamos contigo en tus mejores momentos:</div>
-          <img src="/heartharrow.png" className='lg:block w-32 hidden lg:my-2 -ml-9' alt="" />
+          <div className="text-orange1 text-opacity-80 text-center font-bold lg:text-lg pt-12 pb-6">La mayor diferencia con la mejor calidad!</div>
+          <img src="/heartharrow.png" className='lg:block w-32 hidden lg:my-0 -ml-9' alt="" />
         </div>
       <HomeCarrusel/>
-      <Actividades/>
+      <Nosotros/>
       </section>
     </div>
   );
