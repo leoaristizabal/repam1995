@@ -19,7 +19,6 @@ function App() {
     <>
       <Header/>
       <Home/> 
-      <Products/>
       <FloatingWhatsApp
      phoneNumber='50762748970'
      accountName='Awuas Ve'

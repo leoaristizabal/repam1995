@@ -16,11 +16,12 @@ const Home = () => {
           </span>
         {/*}  <p className='text-black text-center text-2xl my-8'>Mira nuestros productos mas vendidos!</p>*/}
           <Buscador/>
-          <div className="text-orange1 text-opacity-80 text-center font-bold lg:text-lg pt-12 pb-6">La mayor diferencia con la mejor calidad!</div>
-          <img src="/heartharrow.png" className='lg:block w-32 hidden lg:my-0 -ml-9' alt="" />
+          <div className="text-white text-center font-bold lg:text-lg pt-6 pb-0">La mayor diferencia con la mejor calidad!</div>
+          <img src="/heartharrow.png" className='lg:block w-32 hidden pb-4 pb-0 -ml-9' alt="" />
         </div>
       <HomeCarrusel/>
       <Nosotros/>
+      
       </section>
     </div>
   );

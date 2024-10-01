@@ -1,6 +1,7 @@
 import React from 'react'
 import Acordion from './Acordion';
 import { BsPlay } from 'react-icons/bs';
+import Products from './Products';
 
 const responsives = {
     superLargeDesktop: {
@@ -26,8 +27,8 @@ const Nosotros = () => {
     return (
         <div>
             <section>
-                <div className="max-w-[1320px] mx-auto lg:mt-20 mb-10 flex flex-col lg:flex-row bg-orange1 bg-opacity-20 rounded-lg shadow-lg">
-                    <div className="w-full relative lg:w-1/2 lg:mt-0 -mt-24 z-10 lg:px-0 px-3">
+                <div className="max-w-[1320px] lg:mx-auto lg:mt-20 mx-6 my-20 flex flex-col lg:flex-row bg-orange1 bg-opacity-20 rounded-lg shadow-lg">
+                    <div className="w-full relative lg:w-1/2 lg:mt-0 my-2 z-10 lg:px-0 px-3">
                         <img src="/image4.jpeg" alt="" className='w-full h-64 lg:h-full rounded-md object-cover' />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <button className='bg-orange1 animate-pulse text-white rounded-full p-8'>
@@ -35,7 +36,7 @@ const Nosotros = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 py-24 lg:px-12 px-3">
+                    <div className="w-full lg:w-1/2 py-12 lg:px-12 px-3">
                         <div className="relative w-fit px-8 py-2 flex items-center justify-center">
                             <span className='bg-orange1 rounded-md bg-opacity-25 absolute w-full h-full z-10'>
                             </span>
@@ -48,8 +49,8 @@ const Nosotros = () => {
                     </div>
                 </div>
             </section>
-
             
+      <Products/>
         </div>
     )
 }

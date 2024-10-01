@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
-import { FaBiking, FaFirstOrder, FaSnowflake } from 'react-icons/fa';
-import { FaSun } from 'react-icons/fa';
-import { GiBrainFreeze, GiColdHeart, GiTennisRacket } from 'react-icons/gi';
-import { LiaWarehouseSolid } from 'react-icons/lia';
-import { RiNumber1, RiPlanetLine } from 'react-icons/ri';
-import { TbBeach, TbFreezeRow, TbNumber1 } from 'react-icons/tb';
+import {FaSnowflake } from 'react-icons/fa';;
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Actividades from './Actividades';
-import { BiEdit, BiFirstAid, BiFirstPage, BiMedal } from 'react-icons/bi';
-import { ImFirst } from 'react-icons/im';
-import { CgViewComfortable } from 'react-icons/cg';
-import { SiNicehash, SiTrustedshops, SiTrustpilot } from 'react-icons/si';
+import { BiEdit, BiMedal } from 'react-icons/bi';
+import {SiTrustpilot } from 'react-icons/si';
 import { DiModernizr } from 'react-icons/di';
 
 const responsives = {
@@ -50,7 +43,7 @@ const HomeCarrusel = () => {
 
   return (
     <section className=' bg-[url(/patronbg1.svg)] bg-cover bg-orange1 bg-opacity-10 bg-center'>
-      <div className='relative z-10 max-w-[1400px] px-6 mx-auto xl:-mt-28 -mt-16'>
+      <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-16'>
         <Carousel 
           responsive={responsives} 
           infinite 

@@ -36,11 +36,11 @@ export default function Acordion() {
                 <Disclosure key={index}>
                     {({ open }) => (
                         <>
-                            <DisclosureButton className={`w-full text-left bg-white rounded-sm p-4 flex items-center justify-between ${open ? 'border-l-2 border-blue1' : 'border mb-4'}`}>
+                            <DisclosureButton className={`w-full text-left bg-white rounded-sm p-4 flex items-center justify-between ${open ? 'border-l-2 border-orange1' : 'border mb-4'}`}>
                                 <span className="font-bold text-gray-600 text-lg">{item.title}</span>
-                                {open ? <IoChevronUpCircleOutline className="w-5 h-5 text-blue1" /> : <IoChevronDownCircleOutline className="w-5 h-5 text-gray-500" />}
+                                {open ? <IoChevronUpCircleOutline className="w-5 h-5 text-orange1" /> : <IoChevronDownCircleOutline className="w-5 h-5 text-gray-500" />}
                             </DisclosureButton>
-                            <DisclosurePanel className='bg-white p-4 border-l-2 border-blue1 rounded-sm mb-2'>
+                            <DisclosurePanel className='bg-white p-4 border-l-2 border-orange1 rounded-sm mb-2'>
                                 <p className="text-gray-500">{item.content}</p>
                             </DisclosurePanel>
                         </>
