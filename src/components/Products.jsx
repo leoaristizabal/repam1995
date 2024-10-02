@@ -1,10 +1,12 @@
 import React from 'react'
+import { BiDollar } from 'react-icons/bi';
 import { CiCamera, CiHeart } from 'react-icons/ci';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { LiaDollarSignSolid } from 'react-icons/lia';
 import { MdArrowRightAlt, MdLocationPin, MdPeopleOutline, MdStar } from 'react-icons/md';
 import { WiTime3 } from 'react-icons/wi';
 import Carousel from 'react-multi-carousel';
+import Aliados from './Aliados';
 
 
 const responsives = {
@@ -27,21 +29,22 @@ const responsives = {
 };
 
 
-const Product = ({ image, name }) => {
+const Product = ({ image, name, price, description }) => {
     return (
         <div>
             <div className='bg-blue1 relative overflow-hidden rounded-t-lg'>
                 <img className="rounded-t-lg hoverImg" src={image} alt='' />
                 <div className='absolute flex justify-between top-4 left-4 right-4'>
-                    <p className='bg-[#14b8c3] rounded-md px-4 py-1 text-white text-sm'>Catalogo</p>
-                    <button className='bg-[#000006] rounded-md pl-1 '>
-                        <CiHeart className='text-gray-800 text-xl' />
+                    <p className='bg-orange1 rounded-md px-4 py-1 text-white text-sm'>Productos</p>
+                    <button className='bg-orange1 bg-opacity-40 rounded-md px-2 '>
+                        <CiHeart className='text-white text-xl' />
                     </button>
                 </div>
             </div>
             <div className='border border-[#ebe6de] rounded-b-lg relative'>
                 <div className='absolute w-full h-5 -top-5 bg-white rounded-t-[20px]'></div>
                 <div className='px-6'>
+                    
                     <div className='flex items-center gap-4 justify-between relative'>
                         <span className='flex justify-center'>
                             {[...Array(5)].map((_, index) => (
@@ -59,19 +62,16 @@ const Product = ({ image, name }) => {
                     <h4 className='text-xl font-semibold py-2 hover:text-blue1'>{name}</h4>
                     <span className='flex items-center gap-2'>
                         <MdLocationPin className='text-blue1 text-xl' />
-                        <p className='text-gray-800 text-sm font-semibold'>Termo Acero 16 Oz</p>
+                        <p className='text-gray-800 text-sm font-semibold'>{description}</p>
                     </span>
-                    <span className='text-gray-600 flex py-4'>
-                        <LiaDollarSignSolid className='text-blue1 text-xl' />
-                        <p className='text-blue1'>$14.99</p>
+                    <span className='text-gray-600 flex py-2'>
+                        <LiaDollarSignSolid className='text-[#118c4f] text-lg' />
+                        <h4 className='text-gray-800 text-xl font-semibold'>{price}</h4>
                     </span>
                     <div className='flex justify-between border-t py-2'>
                         <div className='flex items-center gap-4'>
                             <span className='flex items-center gap-1'>
-                                <WiTime3 className='text-blue1 ' /> 750ml
-                            </span>
-                            <span className='flex items-center gap-1'>
-                                <MdPeopleOutline className='text-blue1 ' />50
+                                <LiaDollarSignSolid className='text-[#118c4f]' />14.99
                             </span>
                         </div>
                         <a href="#" className='flex items-center gap-2 text-sm mt-2'>Ver Mas <MdArrowRightAlt /></a>
@@ -99,13 +99,14 @@ const Products = ({ }) => {
                 autoPlay= {true}
                 itemClass='px-2 pb-4'>
 
-                <Product image='image1.jpeg' alt="Termo Acero 16 Oz " />
-                <Product image='image2.jpeg' alt="Termo Acero 16 Oz " />
-                <Product image='image3.jpeg' alt="Termo Acero 16 Oz " />
-                <Product image='image4.jpeg' alt="Termo Acero 16 Oz " />
+                <Product image='image1.jpeg' name="Termo Acero 20 Oz" description="Ejemplo descripcion11" price="$25" />
+                <Product image='image2.jpeg' name="Toalla Deportiva " description="Ejemplo descripcion22" price="$20" />
+                <Product image='image3.jpeg' name="Toalla de Playa " description="Ejemplo descripcion3" price="$10"/>
+                <Product image='image2.jpeg' name="Termo Acero 16 Oz " description="Ejemplo descripcion4" price="$20" />
                 </Carousel>
 
             </div>
+            <Aliados/>
         </section>
     )
 }

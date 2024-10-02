@@ -6,6 +6,8 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Products from './components/Products'
+import Aliados from './components/Aliados'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
   )
   return (
     <>
+    <main>
       <Header/>
       <Home/> 
       <FloatingWhatsApp
@@ -27,8 +30,8 @@ function App() {
      placeholder='Mensaje'
      chatMessage='Hola! Gracias por escribir a Awuas, ¿Cómo podemos ayudarte?'
    />
+    </main>
     </>
-     
   )
 }
 
