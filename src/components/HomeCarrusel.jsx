@@ -2,27 +2,27 @@ import React, { useState } from 'react';
 import {FaSnowflake } from 'react-icons/fa';;
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Actividades from './Actividades';
 import { BiEdit, BiMedal } from 'react-icons/bi';
 import {SiTrustpilot } from 'react-icons/si';
 import { DiModernizr } from 'react-icons/di';
 
+
 const responsives = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 3,
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
   },
 };
 
@@ -42,21 +42,21 @@ const HomeCarrusel = () => {
   };
 
   return (
-    <section className=' bg-[url(/patronbg1.svg)] bg-cover bg-orange1 bg-opacity-10 bg-center'>
-      <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-16'>
+    <section >
+      <div className='relative z-10 max-w-[1320px] px-6 mx-auto xl:-mt-28 -mt-48'>
         <Carousel 
           responsive={responsives} 
           infinite 
           autoPlay={true} 
           itemClass="px-2"
-          afterChange={handleAfterChange}  // Usa afterChange para actualizar el slide actual
+          afterChange={handleAfterChange}
         >
           {TiposAventuras.map((item, index) => (
             <div key={index} className="group border rounded-lg">
               <div className={`cursor-pointer p-8 rounded-lg flex flex-col justify-center items-start gap-4 ${
                 currentSlide % TiposAventuras.length === index 
                   ? 'bg-blue1 bg-opacity-80 text-white' 
-                  : 'bg-white text-blue1 group-hover:bg-blue1 group-hover:bg-opacity-80 group-hover:text-white'
+                  : 'bg-white bg-center text-blue1 group-hover:bg-blue1 group-hover:bg-opacity-60 group-hover:text-white'
               }`}>
                 <p className={`font-bold text-lg ${
                   currentSlide % TiposAventuras.length === index
@@ -86,7 +86,6 @@ const HomeCarrusel = () => {
           ))}
         </Carousel>
 
-        <Actividades/>
       </div>
     </section>
   );

@@ -22,10 +22,7 @@ const items = [
         title: "¿Hacemos entregas y envíos nacionales?",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus ipsam beatae assumenda, molestiae fugiat porro error ex voluptate eaque."
     },
-    {
-        title: "¿Dondé pueden encontrar nuestros productos?",
-        content: "1.Tucacas"
-    }
+    
 ]
 
 export default function Acordion() {
