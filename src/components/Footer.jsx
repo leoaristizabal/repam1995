@@ -1,31 +1,72 @@
 import React from 'react'
-import { GoArrowUpRight } from 'react-icons/go'
+import { FaInstagram, FaFacebook, FaTiktok, FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='bg-blue1 pt-44'>
-      <div className='max-w-[1320px] mx-auto px-3'>
-        <div className='lg:flex gap-16 pb-20'>
-          <div className='flex justify-between items-center lg:pb pb-8'>
-            <span className='glex gap-4 items-center lg:w-3/4'>
-              <img height={80} width={80} src='/logoA.png' alt="" />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </span>
-            <div className='lg:w-1/4 lg:flex hidden justify-end'>
-              <button className='bg-orange1 rounded0full text-white w-16 h-16 flex items-center justify-center' >
-                <GoArrowUpRight size={24} />
-              </button>
+    <footer className=' bg-[url(/patronbg4.svg)] bg-blue1 bg-opacity-10 bg-center'>
+      <div className="footer-top">
+        <div className="container px-8 py-8 max-w-[1320px] mx-auto">
+          <div className="flex flex-wrap">
+            <div className="w-full lg:w-1/3 ">
+              <img src='./logocompleto.svg' className="w-64 my-4" alt="Logo" />
+              <p>Valencia, Venezuela. </p>
+              <div className="footer-social-links flex mt-8 text-2xl gap-4">
+                <a className='hover:text-4xl text-blue1 ' href="https://www.instagram.com/awuasve/">
+                  <FaInstagram />
+                </a>
+                <a className='hover:text-4xl text-blue1 ' href="#">
+                  <FaFacebook />
+                </a>
+                <a className='hover:text-4xl text-blue1 ' href="#">
+                  <FaTiktok />
+                </a>
+                <a className='hover:text-4xl text-blue1 ' href="#">
+                  <FaWhatsapp />
+                </a>
+              </div>
+            </div>
+            
+            <div className="w-full lg:w-1/4 lg:ml-auto">
+              <h6 className="text-gray-800 font-bold text-md mt-4 mb-2">CONTACTO</h6>
+              <a href="#" className="flex hover:text-lg hover:text-blue1  items-center gap-2 footer-link block mb-1">
+                <FaWhatsapp /> +58 4245840624
+              </a>
+              <a className="flex items-center hover:text-lg hover:text-blue1  gap-2 footer-link block mb-1">
+                <FaPhone /> +58 424123456
+              </a>
+              <a href="mailto:pedidos@lacapitalcarniceria.com" className="flex items-center gap-2 hover:text-lg hover:text-blue1  footer-link block mb-1">
+                <FaEnvelope /> Correo@awuasve.com
+              </a>
+              <p className="footer-link hover:text-blue1  block hover:text-blue1 hover:text-lg mb-1">
+                <a className="flex items-center hover:text-lg  gap-2 footer-link" href="https://www.instagram.com/awuasve/">
+                  <FaInstagram /> @AwuasVe
+                </a>
+              </p>
+              <p className="mb-0">Valencia, Venezuela.</p>
+            </div>
+
+            <div className="w-full lg:w-1/4 ">
+              <h6 className="text-gray-800 font-bold text-md mt-3 mb-2">HORARIO</h6>
+              <p className="mb-1">Lunes: 9:00am - 4:00pm</p>
+              <p className="mb-1">Martes - Viernes: 9:00am - 2:00pm / 5:00pm - 9:00pm</p>
+              <p className="mb-1">Sábados: 9:00am - 4:00pm</p>
+              <p>Domingo : Cerrado</p>
+              <p className="mt-4">
+                <a className="footer-link" href="/PrivacyPolicyLaCapital.pdf">POLÍTICAS DE PRIVACIDAD</a>
+              </p>
             </div>
           </div>
-          <div className='flex justify-between items-center lg:pb pb-8'>
-            <span className='glex gap-4 items-center lg:w-3/4'>
-              <img height={80} width={80} src='/logoA.png' alt="" />
-              <p>Lorem ipsum dolor sit amet.</p>
-            </span>
-            <div className='lg:w-1/4 lg:flex hidden justify-end'>
-              <button className='bg-orange1 rounded0full text-white w-16 h-16 flex items-center justify-center' >
-                <GoArrowUpRight size={24} />
-              </button>
+        </div>
+      </div>
+
+      <div className="footer-bottom mt-8">
+        <div className="container mx-auto">
+          <div className="flex justify-center mb-6 items-center">
+            <div>
+              <p className="mb-0">
+                Copyright 2024 © Designed by
+                <a className="hover:text-blue1  ml-1" href="https://avocodesign.vercel.app/">AvocoDesign.</a>
+              </p>
             </div>
           </div>
         </div>

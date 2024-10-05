@@ -26,7 +26,7 @@ const Nosotros = () => {
     return (
         <div>
             <section>
-                <div className="max-w-[1320px] lg:mx-auto lg:mt-20 mx-6 my-20 flex flex-col lg:flex-row bg-orange1 bg-opacity-20  bg-center rounded-lg shadow-xl">
+                <div className="max-w-[1320px] lg:mx-auto lg:mt-20 mx-6 my-10 flex flex-col lg:flex-row bg-orange1 bg-opacity-20  bg-center rounded-lg shadow-xl">
                     <div className="w-full relative lg:w-1/2 lg:mt-0 my-2 z-10 lg:px-0 px-3">
                         <img src="/image4.jpeg" alt="" className='w-full h-64 lg:h-full rounded-md object-cover' />
                         <div className="absolute inset-0 flex items-center justify-center">

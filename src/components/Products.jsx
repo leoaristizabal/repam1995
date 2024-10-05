@@ -1,15 +1,8 @@
 import React from 'react'
-import { BiBall, BiDollar, BiDollarCircle, BiRuler } from 'react-icons/bi';
-import { CiCamera, CiHeart } from 'react-icons/ci';
-import { IoVideocamOutline } from 'react-icons/io5';
-import { MdArrowRightAlt, MdLocationPin, MdPeopleOutline, MdStar } from 'react-icons/md';
+import { BiDollar } from 'react-icons/bi';
+import {CiHeart, CiRuler } from 'react-icons/ci';
 import Carousel from 'react-multi-carousel';
-import Aliados from './Aliados';
-import { FaProductHunt } from 'react-icons/fa';
-import { BsBalloon, BsBalloonFill, BsBalloonHeartFill, BsCircleFill } from 'react-icons/bs';
-import { GiBalloons } from 'react-icons/gi';
-import { PiBalloonBold } from 'react-icons/pi';
-import { RiBallPenFill } from 'react-icons/ri';
+import { BsCircleFill } from 'react-icons/bs';
 
 
 const responsives = {
@@ -34,12 +27,12 @@ const responsives = {
 
 const Product = ({ image, name, price, description, modelo }) => {
     return (
-        <div>
+        <div  className='cursor-pointer'>
             <div className='bg-blue1 relative overflow-hidden rounded-t-lg'>
                 <img className="rounded-t-lg hoverImg" src={image} alt='' />
                 <div className='absolute flex justify-between top-4 left-4 right-4'>
                     <p className='bg-orange1 rounded-md px-4 py-1 text-white text-sm'>Productos</p>
-                    <button className='bg-orange1 bg-opacity-40 rounded-md px-2 '>
+                    <button className='bg-orange1  rounded-md px-2 '>
                         <CiHeart className='text-white text-xl' />
                     </button>
                 </div>
@@ -67,21 +60,21 @@ const Product = ({ image, name, price, description, modelo }) => {
                                 <MdStar key={index} className='text-orange1 text-xl' />
                             ))}
                         </span> ESTRELLASSSSS*/}
-                    <span className='flex items-center mt-0 mb-4 gap-2'>
-                        <p className='text-gray-800 text-xs'>{modelo}</p>
-                    </span>
+
                     <div className='flex items-center gap-4'>
                         <span className='flex items-center mb-4 gap-2'>
-                            <p className='text-gray-600 text-sm font-semibold'>{description}</p>
+                            <p className='text-gray-600 text-xs '>{description}</p>
                         </span>
 
                     </div>
-
+                    <span className='flex items-center mt-0 mb-2 gap-2'>
+                        <p className='text-gray-800 text-xs'>{modelo}</p>
+                    </span>
 
                     <div className='flex justify-between border-t py-2'>
                         <div className='flex items-center gap-1'>
                             <BiDollar className='text-orange1 font-bold text-xl' />
-                            <h4 className='text-gray-800 text-xl -ml-1 font-semibold'>{price}</h4>
+                            <h4 className='text-gray-800 text-xl -ml-1 font-bold'>{price}</h4>
                         </div>
                         <div className='flex items-center gap-2'>
                             <BsCircleFill className='text-[#070c57] text-xm' />
@@ -101,7 +94,7 @@ const Product = ({ image, name, price, description, modelo }) => {
 const Products = ({ }) => {
     return (
         <section className='container max-w-[1320px] mx-auto py-12' >
-            <div className="relative w-fit px-8 py-2 flex items-center justify-center">
+            <div className="relative px-8 w-fit py-2 flex items-center justify-center">
                 <span className='bg-blue1 rounded-md bg-opacity-70 absolute w-full h-full z-10'>
                 </span>
                 <h6 className='text-white z-20 relative font-semibold'>Catalogo</h6>
@@ -114,10 +107,11 @@ const Products = ({ }) => {
                     autoPlay={true}
                     itemClass='px-2 pb-4'>
 
-                    <Product image='image1.jpeg' name="Termo Con Pitillo" modelo='20 Oz' description="Ejemplo descripcion11" price="17" />
-                    <Product image='image2.jpeg' name="Toalla Sport" modelo="60cm X 30cm" description="Ejemplo descripcion22" price="15" />
-                    <Product image='image3.jpeg' name="Toalla Grande" modelo='120cm x 60cm' description="Ejemplo descripcion3" price="20" />
-                    <Product image='image2.jpeg' name="Termo Tapa Magnética" modelo='25 Oz' description="Ejemplo descripcion4" price="20" />
+                    <Product image='/termopitillo.png' name="Termo Con Pitillo" modelo='20 Oz' description="Ideal para bebidas frías y calientes, fácil de usar en movimiento." price="17" />
+                    <Product image='toallapeq.png' name="Toalla Sport" modelo="60cm X 30cm" description="Ligera y absorbente, perfecta para entrenamientos intensos." price="15" />
+                    <Product image='termomag.png' name="Termo Tapa Magnética" modelo='25 Oz' description="Mantén tus bebidas seguras y a la temperatura ideal por más tiempo." price="20" />
+                    <Product image='toallafde.png' name="Toalla Grande" modelo='120cm x 60cm' description="Máximo confort y suavidad para después de la ducha." price="20" />   
+                    <Product image='jersey.png' name="Jersey Playero" modelo='Tallas S - XL' description="Comodidad y estilo para cualquier ocasión casual, playera o deportiva" price="20" />
                 </Carousel>
 
             </div>
