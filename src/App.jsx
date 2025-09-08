@@ -22,23 +22,20 @@ function App() {
   )
   return (
     <>
-      <main className=' bg-[url(/patronbg4.svg)] bg-orange1 bg-opacity-10 bg-center'>
+      <main className='  bg-blue1 bg-opacity-10 bg-center'>
         <Header />
         <Home />
         <HomeCarrusel />
-        <Actividades />
 
         <Nosotros />
-        <Products />
       </main>
-      <Aliados />
       <FloatingWhatsApp
-        phoneNumber='50762748970'
-        accountName='Awuas Ve'
-        avatar='/logowa.svg'
+        phoneNumber='584245989755'
+        accountName='Representaciones Am 1995 C.A.'
+        avatar='/logorep.png'
         statusMessage='En Línea'
         placeholder='Mensaje'
-        chatMessage='Hola! Gracias por escribir a Awuas, ¿Cómo podemos ayudarte?'
+        chatMessage='Hola! Gracias por escribirnos, ¿Cómo podemos ayudarte?'
         
       />
       <Footer />

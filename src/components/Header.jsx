@@ -17,7 +17,7 @@ const Header = () => {
                 <div className='lg:w-full w-11/12 mx-auto h-full flex lg:justify-center items-center lg:gap-16 justify-between'>
                     <div className='flex flex-col gap-y-4'>
                         <div className='flex items-center gap-x-2'>
-                            <img className='w-10' src="/logoA.png" alt="LOGO AWUAS" />
+                            <img className='w-20' src="/logoHOME.png" alt="LOGO REPRESENTACIONES AM 1995" />
                         </div>
                     </div>
                     <ul className='flex items-center xl:gap-12 gap-x-4 max-lg:hidden'>

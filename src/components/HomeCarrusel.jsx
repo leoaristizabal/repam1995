@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import {FaSnowflake } from 'react-icons/fa';;
+import { FaBookReader } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { BiEdit, BiMedal } from 'react-icons/bi';
-import {SiTrustpilot } from 'react-icons/si';
-import { DiModernizr } from 'react-icons/di';
-
+import { FaTree } from 'react-icons/fa';
+import { FaPersonCircleCheck } from 'react-icons/fa6';
+import { IoIosCut } from 'react-icons/io';
+import { PiTestTubeFill } from 'react-icons/pi';
 
 const responsives = {
   superLargeDesktop: {
@@ -27,11 +27,11 @@ const responsives = {
 };
 
 const TiposAventuras = [
-  { title: "Materiales de Primera", icon: <BiMedal/> },
-  { title: "+6h Frío, +4h Calor", icon: <FaSnowflake /> },
-  { title: "Comfort + Durabilidad", icon: <SiTrustpilot/> },
-  { title: "Diseños Modernos", icon: <DiModernizr/> },
-  { title: "Termos Personalizables", icon: <BiEdit /> },
+  { title: "Poda, Tala y Rocería", icon: <IoIosCut/> },
+  { title: "Servicios Ambientales", icon: <FaTree /> },
+  { title: "Asesoría Especializadas", icon: <FaBookReader/> },
+  { title: "Evaluación de Riesgos", icon: < PiTestTubeFill  /> },
+  { title: "Gestion de Personal", icon: <FaPersonCircleCheck /> },
 ];
 
 const HomeCarrusel = () => {
