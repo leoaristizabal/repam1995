@@ -5,11 +5,8 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import Products from './components/Products'
-import Aliados from './components/Aliados'
 import Footer from './components/Footer'
 import HomeCarrusel from './components/HomeCarrusel'
-import Actividades from './components/Actividades'
 import Nosotros from './components/Nosotros'
 
 
@@ -32,7 +29,7 @@ function App() {
       <FloatingWhatsApp
         phoneNumber='584245989755'
         accountName='Representaciones Am 1995 C.A.'
-        avatar='/logorep.png'
+        {/*avatar='/logorep.png'*/}
         statusMessage='En Línea'
         placeholder='Mensaje'
         chatMessage='Hola! Gracias por escribirnos, ¿Cómo podemos ayudarte?'
