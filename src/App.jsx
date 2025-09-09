@@ -29,7 +29,7 @@ function App() {
       <FloatingWhatsApp
         phoneNumber='584245989755'
         accountName='Representaciones Am 1995 C.A.'
-        {/*avatar='/logorep.png'*/}
+        /*giavatar='/logorep.png'*/
         statusMessage='En Línea'
         placeholder='Mensaje'
         chatMessage='Hola! Gracias por escribirnos, ¿Cómo podemos ayudarte?'
