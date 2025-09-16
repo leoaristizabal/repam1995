@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <section className='relative top-0 h-[110vh]' data-aos='fade-down' data-aos-delay="300" data-aos-duration='3000' > {/** */}
-        <video className='absolute z-0 h-full w-full object-cover' src='/videobg1111.mp4' autoPlay loop muted></video>
+        <video className='absolute z-0 h-full w-full object-cover' src='./videobg1111.mp4' autoPlay loop muted></video>
         <div className='flex flex-col justify-center items-center relative z-10 lg:h-full h-screen max-w-[1320px] px-6 xl:pt-0 pt-16 mx-auto '>
           <img src="./logoHOME.png" className=' md:w-45  xl:max-w-[470px] max-w-[370px]' alt="" />
           {/*<span className='lg:text-xl text-sm text-white text-center py-2 pb-8 px-8 font-bold relative'>

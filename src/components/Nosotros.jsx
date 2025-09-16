@@ -28,7 +28,7 @@ const Nosotros = () => {
             <section>
                 <div className="max-w-[1320px] lg:mx-auto lg:mt-20 mx-6 my-10 flex flex-col lg:flex-row bg-blue1 bg-opacity-75  bg-center rounded-lg shadow-xl">
                     <div className="w-full relative lg:w-1/2 lg:mt-0 my-2 z-10 lg:px-0 px-3">
-                        <img src="/logo blanco.png" alt="" className='w-full h-64 lg:h-full opacity-75rounded-md object-cover' />
+                        <img src="./logo blanco.png" alt="" className='w-full h-64 lg:h-full opacity-75rounded-md object-cover' />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <button className='bg-blue1 animate-pulse text-white rounded-full p-8'>
                                 <BsPlay size={30} />
